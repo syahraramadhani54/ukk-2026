@@ -1,0 +1,222 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#eef2ff,#f8fafc);
+min-height:100vh;
+padding:40px 20px;
+}
+
+
+/* CONTAINER */
+
+.container{
+max-width:950px;
+margin:auto;
+background:white;
+padding:35px;
+border-radius:16px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+
+/* TOP BAR */
+
+.top-bar{
+margin-bottom:15px;
+}
+
+.btn-back{
+text-decoration:none;
+color:#2563eb;
+font-size:14px;
+font-weight:500;
+}
+
+.btn-back:hover{
+text-decoration:underline;
+}
+
+
+/* TITLE */
+
+h2{
+text-align:center;
+margin-bottom:25px;
+color:#0f172a;
+font-weight:600;
+}
+
+
+/* SEARCH BOX */
+
+.search-box{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:25px;
+}
+
+.search-box input{
+padding:11px;
+width:240px;
+border:1px solid #d1d5db;
+border-radius:8px;
+outline:none;
+transition:0.25s;
+}
+
+.search-box input:focus{
+border-color:#2563eb;
+box-shadow:0 0 0 2px rgba(37,99,235,0.15);
+}
+
+.search-box button{
+padding:11px 18px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+transition:0.25s;
+}
+
+.search-box button:hover{
+background:#1e40af;
+transform:translateY(-2px);
+}
+
+.btn-reset{
+background:#64748b;
+color:white;
+padding:11px 16px;
+text-decoration:none;
+border-radius:8px;
+font-size:14px;
+transition:0.25s;
+}
+
+.btn-reset:hover{
+background:#475569;
+}
+
+
+/* TABLE */
+
+.table-wrapper{
+overflow-x:auto;
+border-radius:12px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+font-size:14px;
+min-width:650px;
+}
+
+thead{
+background:#f8fafc;
+}
+
+th{
+padding:13px;
+text-align:center;
+color:#475569;
+border-bottom:2px solid #e2e8f0;
+}
+
+td{
+padding:13px;
+text-align:center;
+border-bottom:1px solid #f1f5f9;
+}
+
+tbody tr{
+transition:0.2s;
+}
+
+tbody tr:hover{
+background:#f9fafb;
+}
+
+
+/* STATUS BADGE */
+
+.menunggu,
+.proses,
+.selesai{
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:600;
+display:inline-block;
+}
+
+.menunggu{
+background:#fef3c7;
+color:#b45309;
+}
+
+.proses{
+background:#dbeafe;
+color:#1d4ed8;
+}
+
+.selesai{
+background:#dcfce7;
+color:#15803d;
+}
+
+
+/* HIGHLIGHT */
+
+.highlight-row{
+background:#eef2ff !important;
+border-left:4px solid #2563eb;
+}
+
+
+/* DATA TIDAK ADA */
+
+.notfound{
+text-align:center;
+color:#dc2626;
+font-weight:500;
+margin-top:20px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.container{
+padding:25px;
+}
+
+.search-box input{
+width:100%;
+}
+
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 12px;
+    text-align: center;
+
+    color: #64748b;
+    font-size: 13px;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+.footer b {
+    color: #2563eb;
+}
